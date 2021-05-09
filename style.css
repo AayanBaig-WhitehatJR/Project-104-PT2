@@ -1,0 +1,16 @@
+body{
+    background: radial-gradient(#e66465, #9198e5);
+    color: white;
+}
+.heading{
+    width: 80%;
+    font-size: 22px;
+}
+#list, #objectDisplay, #accuracyDisplay{
+    color: yellow
+}
+#camera{
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}

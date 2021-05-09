@@ -1,0 +1,63 @@
+ 
+<html>
+  <head>
+    <title>Aayan's Emotions Recognizer.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h3 class = "btn btn-default heading">Emotions Recognizer<br>By Aayan</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">This model has been trained to see the following Emoticons: </p>
+      <br><br>
+      <b id = "list">
+        Happy
+        <hr>
+ Angry  
+        <hr>
+        Neutral 
+        <hr>
+      Decently Happy
+        <hr>
+      </b>
+
+      <label>Webcam is displayed below:</label>
+
+      <br><br>
+<div id = "camera">
+
+</div>
+      <br><br>
+      <div id = "result">
+        
+      </div>
+      <br><br>
+<button class = "btn btn-info" onclick = "capture()">Capture Emotion</button>
+      <br><br>
+<button class = "btn btn-warning" onclick = "identify()">Identify Emotion </button>
+<br>
+<br>
+
+      <p style="font-size: 22px;">Detected Emotion: <span id = "objectDisplay"></span> </p>
+      <p style="font-size: 22px;">Accuracy (0 - 100):  <span id = "accuracyDisplay"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
